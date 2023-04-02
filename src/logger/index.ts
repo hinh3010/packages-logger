@@ -5,7 +5,7 @@ import dayjs from 'dayjs'
 const stream = pretty({
   colorize: true,
   levelFirst: true,
-  translateTime: `,'time':'${dayjs().format()}"`
+  translateTime: `Time::: ${dayjs().format()}`
 })
 
 export const SimpleLogger = pino(stream)
