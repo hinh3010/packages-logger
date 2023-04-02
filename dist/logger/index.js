@@ -10,6 +10,6 @@ const dayjs_1 = __importDefault(require("dayjs"));
 const stream = (0, pino_pretty_1.default)({
     colorize: true,
     levelFirst: true,
-    translateTime: `'Time': ${(0, dayjs_1.default)().format()}`
+    translateTime: `,'time':'${(0, dayjs_1.default)().format()}"`
 });
 exports.SimpleLogger = (0, pino_1.default)(stream);
